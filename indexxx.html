@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Приглашение на рандеву</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #ffb347, #ffcc33);
+      padding: 20px;
+    }
+
+    .card {
+      max-width: 520px;
+      width: 100%;
+      background: #ffffffee;
+      border-radius: 24px;
+      box-shadow: 0 18px 35px rgba(0, 0, 0, 0.18);
+      overflow: hidden;
+    }
+
+    .card-header {
+      background-image: url("https://images.pexels.com/photos/931162/pexels-photo-931162.jpeg?auto=compress&cs=tinysrgb&w=1200");
+      background-size: cover;
+      background-position: center;
+      height: 220px;
+      position: relative;
+    }
+
+    .card-header::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at bottom, rgba(0,0,0,0.25), transparent 55%);
+    }
+
+    .card-body {
+      padding: 28px 24px 24px;
+    }
+
+    .title {
+      font-size: 26px;
+      font-weight: 700;
+      color: #e53935;
+      margin-bottom: 12px;
+      line-height: 1.3;
+    }
+
+    .subtitle {
+      font-size: 17px;
+      margin-bottom: 18px;
+      color: #333;
+    }
+
+    .info-row {
+      margin-bottom: 6px;
+      font-size: 15px;
+      color: #444;
+    }
+
+    .info-row span {
+      font-weight: 600;
+    }
+
+    .note {
+      font-size: 14px;
+      color: #777;
+      margin-top: 6px;
+      margin-bottom: 22px;
+    }
+
+    .btn-wrap {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease;
+    }
+
+    .btn-primary {
+      background: #ff7043;
+      color: #fff;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.18);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 10px 22px rgba(0,0,0,0.2);
+      background: #ff5722;
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: #555;
+      border: 1px solid #ccc;
+    }
+
+    .btn-secondary:hover {
+      background: #f5f5f5;
+    }
+
+    .footer {
+      margin-top: 18px;
+      font-size: 13px;
+      color: #999;
+    }
+
+    .footer a {
+      color: #999;
+    }
+
+    @media (max-width: 480px) {
+      .card-body {
+        padding: 22px 18px 20px;
+      }
+      .title {
+        font-size: 22px;
+      }
+      .subtitle {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="card-header"></div>
+    <div class="card-body">
+      <div class="title">Даша... Приглашаю вас сегодня на рандеву варить суп из 7 залуп</div>
+      <div class="subtitle">
+        Буду очень рад нашей встрече 🌸
+      </div>
+
+      <p class="info-row">
+        <span>Дата:</span> тудей
+      </p>
+      <p class="info-row">
+        <span>Время:</span> как удобно
+      </p>
+      <p class="info-row">
+        <span>Место:</span> Комсомольский
+      </p>
+
+      <p class="note">
+        😉
+      </p>
+
+      <div class="btn-wrap">
+        <!-- Заменишь ссылку на свою: WhatsApp, Telegram, форму и т.п. -->
+        <a class="btn btn-primary" href="https://example.com/confirm" target="_blank">
+          Подтвердить участие
+        </a>
+        <a class="btn btn-secondary" href="https://example.com" target="_blank">
+          Перейти на сайт
+        </a>
+      </div>
+
+      <div class="footer">
+        Эта страница-приглашение создана специально для вас.  
+        <br />пис.
+      </div>
+    </div>
+  </div>
+</body>
+</html>
